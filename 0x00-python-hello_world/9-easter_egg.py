@@ -1,2 +1,2 @@
 #!/usr/bin/ls
-import this
+print("The Zen of Python")
