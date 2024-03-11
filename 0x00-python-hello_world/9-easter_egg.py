@@ -1,2 +1,3 @@
-#!/usr/bin/ls
-print("The Zen of Python")
+#!/usr/bin/python3
+import this
+
