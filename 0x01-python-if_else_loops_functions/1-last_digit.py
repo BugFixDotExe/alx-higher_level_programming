@@ -4,6 +4,7 @@ number = random.randint(-10000, 10000)
 if number < 0:
     negate = number * -1
     mod = negate % 10
+    mod = mod * -1
     if mod > 5:
         print("Last digit of {} is {} and\
  is greater than 5".format(number, mod))
