@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-import os
-os.write(0, str.encode("#pythoniscool\n"))
+import os;os.write(0, str.encode("#pythoniscool\n"))
