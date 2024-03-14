@@ -2,4 +2,4 @@
 if __name__ == "__main__":
     import varaible_load_5 as va
     var = va.a
-    print("{:s}".format(str(var))
+    print("{:d}".format(var)
