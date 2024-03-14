@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+
 if __name__ == "__main__":
     sum = 0
     arg_len = len(sys.argv)
