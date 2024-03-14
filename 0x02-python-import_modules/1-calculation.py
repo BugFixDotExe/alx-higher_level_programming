@@ -9,6 +9,6 @@ if __name__ == "__main__":
     ret_div = cal.div(a, b)
 
     print("{:s} + {:s} = {:s}".format(str(a), str(b), str(ret_add)))
-    print("{:s} - {:s} = {:s}".format(str(a),str(b), str(ret_sub)))
+    print("{:s} - {:s} = {:s}".format(str(a), str(b), str(ret_sub)))
     print("{:s} * {:s} = {:s}".format(str(a), str(b), str(ret_mul)))
     print("{:s} / {:s} = {:s}".format(str(a), str(b), str(ret_div)))
