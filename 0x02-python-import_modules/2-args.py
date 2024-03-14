@@ -1,5 +1,5 @@
-import sys
 if __name__ == "__main__":
+    import sys
     arg_len = len(sys.argv)
     arg_len = arg_len - 1
     if arg_len == 0:
