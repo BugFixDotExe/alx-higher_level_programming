@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "Python.h"
-
+#include <stdio.h>
 /**
  * print_python_list_info - a function that runs
  * a python print python objects info
@@ -12,6 +11,7 @@ void print_python_list_info(PyObject *p)
 {
 	int i;
 	PyListObject *_list;
+
 	_list = (PyListObject *) p;
 	printf("[*] Size of the Python List = %ld\n", _list->ob_base.ob_size);
 	printf("[*] Allocated = %ld\n", _list->allocated);
