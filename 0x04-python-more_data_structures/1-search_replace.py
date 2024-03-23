@@ -12,5 +12,3 @@ def search_replace(my_list, search, replace):
         return (cpy_list)
     else:
         return (my_list)
-        
-
