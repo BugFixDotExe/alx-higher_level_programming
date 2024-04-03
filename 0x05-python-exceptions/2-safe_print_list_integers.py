@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
         if x == 0:
             return type_int
         for i in range(x):
-            if type(my_list[i]) == int:
+            if isinstance(my_list[i], int):
                 print("{:d}".format(my_list[i]), end="")
                 type_int += 1
             else:
@@ -14,4 +14,5 @@ def safe_print_list_integers(my_list=[], x=0):
         print()
         return type_int
     except IndexError:
+        print()
         return type_int
