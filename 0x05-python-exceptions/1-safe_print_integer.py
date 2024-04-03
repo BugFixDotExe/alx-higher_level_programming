@@ -4,11 +4,9 @@ def safe_print_integer(value):
         if isinstance(value, int):
             print("{:d}".format(value))
             return True
-        elif isinstance(value, list):
-            print("{:d}".format(value[0]))
-            return True
-        elif isinstance(value, tuple):
-            print("{:d}".format(value[0]))
-            return True
+        if len(value) >= 1:
+            if isinstance(value[0], int):
+                print("{:d}".format(value[0]))
+                return True
     except TypeError:
         return False
