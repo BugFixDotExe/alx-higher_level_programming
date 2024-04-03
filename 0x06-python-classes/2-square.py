@@ -10,6 +10,10 @@ class Square:
         size (int): used for instance variable instantiation
     """
     def __init__(self, size=0):
+        """__int__ a method that constructs an obj
+        args:
+            size (int): a soon to be instance variable
+        """
         self.__size = size
         if type(size) != int:
             raise TypeError("size must be an integer")
