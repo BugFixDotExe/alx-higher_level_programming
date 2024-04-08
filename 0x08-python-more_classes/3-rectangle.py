@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """This is a modue called rectangle that aims to define a rectangle"""
 
 
