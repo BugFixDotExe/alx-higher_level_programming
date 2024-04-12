@@ -1,0 +1,17 @@
+================================
+**The 4-print_square module**
+================================
+	>>> print_square = __import__('4-print_square').print_square
+
+Trying:
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+Trying:
+	>>> print_square(4, 5) #doctest +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+		...
+	TypeError: print_square() takes 1 positional argument but 2 were given
