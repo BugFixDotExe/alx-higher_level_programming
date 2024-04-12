@@ -1,0 +1,49 @@
+================================
+**The 2-matrix_divided module**
+================================
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+Trying:
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+Trying:
+	>>> say_my_name("Walter", "White")
+	My name is Walter White
+
+Trying:
+	>>> say_my_name("Bob")
+	My name is Bob 
+
+Trying:
+	>>> say_my_name(12, "White") #doctest +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+Trying:
+        >>> say_my_name(None, "White") #doctest +IGNORE_EXCEPTION_DETAIL
+        Traceback (most recent call last):
+                ...
+        TypeError: first_name must be a string
+
+Trying:
+        >>> say_my_name("Snow", 1) #doctest +IGNORE_EXCEPTION_DETAIL
+        Traceback (most recent call last):
+                ...
+        TypeError: last_name must be a string
+
+Trying:
+        >>> say_my_name("Beauty", None) #doctest +IGNORE_EXCEPTION_DETAIL
+        Traceback (most recent call last):
+                ...
+        TypeError: last_name must be a string
+
+Trying:
+        >>> say_my_name("", "") #doctest +IGNORE_EXCEPTION_DETAIL
+        Traceback (most recent call last):
+                ...
+        ValueError: first_name must be a string and last_name must be a string
+
+
