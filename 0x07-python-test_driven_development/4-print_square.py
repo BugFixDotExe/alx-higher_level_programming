@@ -8,8 +8,9 @@ def print_square(size):
         Args:
             size (int): number of # to be printed
     """
-    if type(size) == None:
-       raise TypeError("print_square() missing 1 required positional argument: 'size'")
+    if size is None:
+        raise TypeError("print_square() " +
+                        "missing 1 required positional argument: 'size'")
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
