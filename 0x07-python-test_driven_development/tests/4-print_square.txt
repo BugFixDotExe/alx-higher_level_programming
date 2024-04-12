@@ -15,3 +15,9 @@ Trying:
 	Traceback (most recent call last):
 		...
 	TypeError: print_square() takes 1 positional argument but 2 were given
+
+Trying:
+	>>> print_square() #doctest +IGNORE_EXCEPTION_DETAIL
+	Traceback (most recent call last):
+		...
+	TypeError: print_square() missing 1 required positional argument: 'size'
