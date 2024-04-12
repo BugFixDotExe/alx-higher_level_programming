@@ -15,12 +15,10 @@ def add_integer(a, b=98):
     Returns:
         int: The return is the sum of a + b
     """
-    if a == None:
-       raise TypeError("add_integer() missing 1 required positional argument: a")
-    if not isinstance(a, int) and not isinstance(a, float):
+    if a is None or type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if not isinstance(b, int) and not isinstance(b, float):
-        raise TypeError("b must be an integer")
+    if b is None or type(b) is not int and type(b) is not float:
+            raise TypeError("b must be an integer")
     else:
         if isinstance(a, float):
             a = int(a)
