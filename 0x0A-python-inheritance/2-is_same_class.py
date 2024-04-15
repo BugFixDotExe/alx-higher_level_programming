@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-"""A module that returns True or False """
+"""A module that returns True or False"""
 
 
 def is_same_class(obj, a_class):
