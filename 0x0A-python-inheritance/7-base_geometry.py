@@ -22,3 +22,9 @@ class BaseGeometry:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
+        if type(name) == None and type(value) == None:
+            raise TypeError("integer_validator() missing 2 required positional arguments: 'name' and 'value'")
+        if type(value) == None:
+            raise TypeError("integer_validator() missing 1 required positional argument: 'value'")
+        if type(name) == None:
+            raise TypeError("integer_validator() missing 1 required positional argument: 'name'")
