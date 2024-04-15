@@ -14,6 +14,9 @@ class BaseGeometry:
             Args:
                 name (string): a string value
                 value (int): an int value
+            Raises:
+                TypeError: when value is not an int
+                ValueError: when value is <= 0
         """
         if type(value) != int:
             raise TypeError("{:s} must be an integer".format(name))
