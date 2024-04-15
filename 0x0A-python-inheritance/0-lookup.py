@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """a module for printing attr and method of an obj"""
 
