@@ -11,6 +11,6 @@ def save_to_json_file(my_obj, filename):
         filename (string): name of the file
     """
     if type(my_obj) == set:
-        raise TypeError("Object of type set is not JSON serializable")
+        raise TypeError("{:s} is not JSON serializable".format(str(my_obj)))
     with open(filename, mode="w", encoding="UTF-8") as a_file:
         a_file.write(json.dumps(my_obj))
