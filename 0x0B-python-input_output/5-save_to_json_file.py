@@ -10,6 +10,8 @@ def save_to_json_file(my_obj, filename):
         my_obj: fitst args
         filename (string): name of the file
     """
+    if len(filename) == 0:
+        raise ValueError("{:s} has not been set".format(filename))
     if type(my_obj) == set:
         raise TypeError("{:s} is not JSON serializable".format(str(my_obj)))
     with open(filename, mode="w", encoding="UTF-8") as a_file:
