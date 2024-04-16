@@ -4,10 +4,9 @@
 
 
 def read_file(filename=""):
-    """read_file a function for reading a file given a path"""
-    """
+    """read_file a function for reading a file given a path
         Args:
             filename (string): a filepath
     """
-    with open(filename, mode="r", encoding="utf-8") as a_file:
+    with open(filename, encoding="utf-8") as a_file:
         print(a_file.read())
