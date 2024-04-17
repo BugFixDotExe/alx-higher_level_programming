@@ -3,7 +3,6 @@
 """A that returns the dictionary
 description with simple data structure
 """
-import json
 
 
 def class_to_json(obj):
@@ -14,4 +13,4 @@ def class_to_json(obj):
     Returns:
         dictionary description with simple data structure
     """
-    return json.dumps(obj.__dict__)
+    return obj.__dict__
