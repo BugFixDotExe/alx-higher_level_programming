@@ -1,0 +1,5 @@
+#!/usr/bash
+
+-->check if the user password is not already saved
+	if not ask if yes dont
+--> do the usual git commands
