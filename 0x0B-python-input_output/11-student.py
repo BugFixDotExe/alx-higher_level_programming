@@ -37,7 +37,10 @@ class Student:
     def reload_from_json(self, json):
         """reload_from_json """
         """a function that replaces all attributes
-        of the Student instance"""
+        of the Student instance
+        Args:
+            json (dict) containing key value
+        """
         self.first_name = json.get("first_name")
         self.last_name = json.get("last_name")
         self.age = json.get("age")
