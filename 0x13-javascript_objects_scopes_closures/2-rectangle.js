@@ -1,9 +1,8 @@
 #!/usr/bin/node
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || w === undefined || h <= 0 || h === undefined) {
+    if ((w <= 0 || h <= 0) || (w === undefined || h === undefined)) {
       const obj = {};
-      return (obj);
     } else {
       this.width = w;
       this.height = h;
