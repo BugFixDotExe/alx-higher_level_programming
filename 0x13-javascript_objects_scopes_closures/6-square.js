@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const square = require('./5-square');
+const Square = require('./5-square');
 
-class Square extends square {
+class Square extends Square {
   constructor (size) {
     super(size, size);
     this.size = size;
