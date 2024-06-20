@@ -1,11 +1,11 @@
 #!/usr/bin/node
 class Rectangle {
   constructor (w, h) {
-    if ((w <= 0 || w === undefined) || (h <= 0 || h === undefined)) {
-	    const obj = {};
+    if (w <= 0 || w === undefined || h <= 0 || h === undefined) {
+      const obj = {};
     } else {
-    	this.width = w;
-    	this.height = h;
+      this.width = w;
+      this.height = h;
     }
   }
 }
