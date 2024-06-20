@@ -5,6 +5,8 @@ class Rectangle {
     this.height = h;
     if ((w <= 0 || h <= 0) || (w === undefined || h === undefined)) {
       const newObj = {};
+      newObj.width = this.width;
+      newObj.height = this.height;
     }
   }
 
