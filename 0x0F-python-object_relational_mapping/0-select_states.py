@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
-import MySQLdb
-import sys
 """
 This script is meant to fetch a database and query it for all it's items
 in ascending order
 """
 if __name__ == "__main__":
+    import MySQLdb
+    import sys
+
     user, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
     conn = MySQLdb.connect(host="localhost", port=3306, user=user,
                            passwd=password, db=database, charset="utf8")
