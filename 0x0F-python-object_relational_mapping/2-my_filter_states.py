@@ -15,7 +15,7 @@ if __name__ == "__main__":
                            passwd=password, db=db_name, charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT MIN(id) AS id,name\
-            FROM states WHERE name LIKE '{}'".format(search))
+            FROM states WHERE name LIKE '{}' ORDER BY id".format(search))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
