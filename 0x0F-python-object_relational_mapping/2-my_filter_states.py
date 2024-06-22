@@ -14,8 +14,8 @@ if __name__ == "__main__":
     conn = MySQLdb.connect(host="localhost", port=3306, user=username,
                            passwd=password, db=db_name, charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT MIN(id) AS id,name\
-            FROM states WHERE name LIKE '{}' ORDER BY id".format(search))
+    cur.execute("SELECT id,name\
+            FROM states WHERE name LIKE '{}' GROUP BY name ORDER BY id".format(search))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
