@@ -1,9 +1,9 @@
-
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 """
 model_state.py- This module demonstrates the class definition of a State
-and an instance Base = declarative_base()
+and an instance Base
 It searves as the shema for how the database columns
 will be created in the database
 """
