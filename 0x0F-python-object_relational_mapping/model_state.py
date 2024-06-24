@@ -1,6 +1,5 @@
-#!/usr/bin/python3
-
 # -*- coding: utf-8 -*-
+#!/usr/bin/python3
 """
 model_state.py- This module demonstrates the class definition of a State
 and an instance Base
