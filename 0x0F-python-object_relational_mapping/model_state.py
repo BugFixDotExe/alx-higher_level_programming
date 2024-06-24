@@ -24,7 +24,7 @@ Base.metadata.create_all(engine)
 
 class State(Base):
     """
-    A state class that acts as the template for creating or the
+    A State class that acts as the template for creating or the
     schema to the database columns
     Args:
         Base (Base obj): A Base object
@@ -38,7 +38,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 
-# create all tables
+
 Base.metadata.create_all(engine)
 session = Session()
 for state in session.query(State).order_by(State.id).all():
