@@ -5,6 +5,7 @@
  and an instance Base = declarative_base()
 """
 import sys
+import sqlalchemy
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -16,7 +17,6 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
 
 Session = sessionmaker(bind=engine)
 Base.metadata.create_all(engine)
-
 
 # Declare class here
 class State(Base):
