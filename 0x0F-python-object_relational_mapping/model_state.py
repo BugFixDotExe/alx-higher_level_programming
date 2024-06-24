@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
  a python file that contains,
  the class definition of a State
@@ -18,9 +19,14 @@ engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
 Session = sessionmaker(bind=engine)
 Base.metadata.create_all(engine)
 
-# Declare class here
-class State(Base):
 
+class State(Base):
+    """
+    A state class that acts as the template for creating or the
+    schema to the database columns
+    Args:
+        Base (Base obj): A Base object
+    """
     __tablename__ = 'states'
     id = Column(Integer(),
                 autoincrement=True,
@@ -28,7 +34,6 @@ class State(Base):
                 nullable=False,
                 unique=True)
     name = Column(String(128), nullable=False)
-# Class declaration end here
 
 
 # create all tables
