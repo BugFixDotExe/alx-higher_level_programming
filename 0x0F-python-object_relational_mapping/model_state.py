@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
- a python file that contains,
- the class definition of a State
- and an instance Base = declarative_base()
+This module demonstrates the class definition of a State
+and an instance Base = declarative_base()
+It searves as the shema for how the database columns
+will be created in the database
 """
 import sys
 import sqlalchemy
