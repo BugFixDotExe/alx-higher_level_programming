@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 
+# -*- coding: utf-8 -*-
 """
 model_state.py- This module demonstrates the class definition of a State
 and an instance Base
@@ -36,7 +36,6 @@ class State(Base):
                 nullable=False,
                 unique=True)
     name = Column(String(128), nullable=False)
-
 
 
 Base.metadata.create_all(engine)
