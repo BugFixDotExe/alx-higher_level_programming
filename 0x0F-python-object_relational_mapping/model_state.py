@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+
 """
 This module demonstrates the class definition of a State
 and an instance Base = declarative_base()
 It searves as the shema for how the database columns
 will be created in the database
 """
+
 import sys
-import sqlalchemy
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
