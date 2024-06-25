@@ -27,3 +27,4 @@ if __name__ == "__main__":
             print("{}: {}".format(record.id, record.name))
     else:
         print("Nothing")
+    session.close()
