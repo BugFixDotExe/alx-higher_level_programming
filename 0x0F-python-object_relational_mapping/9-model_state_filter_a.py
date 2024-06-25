@@ -21,10 +21,10 @@ if __name__ == "__main__":
     # Engine and session creation and initializaiton ends here
 
     # Database Query begins here
-    state = session.query(State).filter(State.name.like('%a%'))[:4]
-    if state:
-        for record in state:
-            print("{}: {}".format(record.id, record.name))
-    else:
-        print("Nothing")
+    for state in session.query(State).filter(State.name.like('%a%'))[:4]:
+        if state:
+            print("{}: {}".format(state.id, state.name))
+        else:
+            print("Nothing")
+            break
     session.close()
