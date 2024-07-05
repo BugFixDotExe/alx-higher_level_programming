@@ -11,6 +11,6 @@ if __name__ == "__main__":
     try:
         basic = HTTPBasicAuth(sys.argv[1], sys.argv[2])
         content = requests.get("https://api.github.com/user", auth=basic)
-        print(content.json()["id"])
+        print(content.json().get("id"))
     except ValueError as e:
         print("None")
