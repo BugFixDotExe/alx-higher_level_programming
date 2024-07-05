@@ -7,7 +7,7 @@ if __name__ == "__main__":
     import urllib.request
     import urllib.parse
     import sys
-    
+
     # create the data.
     data = {}
     data['email'] = sys.argv[2]
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     # encode the values to be sent over to the server
     encoded_data = urllib.parse.urlencode(data)
     encoded_data = encoded_data.encode('ascii')
-    
+
     # create a request using the url and the inteded data
     request = urllib.request.Request(sys.argv[1], encoded_data)
     with urllib.request.urlopen(request) as response:
