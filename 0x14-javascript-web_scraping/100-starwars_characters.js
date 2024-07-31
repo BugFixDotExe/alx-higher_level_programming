@@ -8,7 +8,7 @@ try {
         return;
       }
       if (con.statusCode !== 200) {
-	      return;
+        return;
       }
       const fullContent = JSON.parse(body);
       for (let i = 0; i < fullContent.characters.length; i++) {
