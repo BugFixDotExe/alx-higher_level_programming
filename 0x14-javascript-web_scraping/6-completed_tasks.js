@@ -5,7 +5,8 @@ try {
   if (process.argv[2] !== undefined) {
     request(process.argv[2], (err, res, body) => {
       if (err) {
-        console.log('code:', err);
+        console.log(userTask);
+        return;
       }
       const userObj = JSON.parse(body);
       for (let item = 0; item < userObj.length; item++) {
