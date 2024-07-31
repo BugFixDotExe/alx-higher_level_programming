@@ -3,9 +3,9 @@ const request = require('request');
 try {
   request(process.argv[2], (err, res, body) => {
     if (err) {
-      console.log('Code: ', err);
+      console.log('code: ', err);
     }
-    console.log('Code: ', res.statusCode);
+    console.log('code: ', res.statusCode);
   });
 } catch (e) {
 }
