@@ -5,12 +5,13 @@ try {
   if (process.argv[2] !== undefined) {
     request(process.argv[2], (err, res, body) => {
       if (err) {
-        console.log(userTask);
-        return;
+        console.log(err);
       }
       const userObj = JSON.parse(body);
       for (let item = 0; item < userObj.length; item++) {
-        userTask[userObj[item].userId] = 0;
+        if (userObj[item].completed === true) {
+		userTask[userObj[item].userId] = 0;
+	}
       }
       for (let item = 0; item < userObj.length; item++) {
         if (userObj[item].completed === true) {
