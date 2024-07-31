@@ -10,8 +10,8 @@ try {
       const userObj = JSON.parse(body);
       for (let item = 0; item < userObj.length; item++) {
         if (userObj[item].completed === true) {
-		userTask[userObj[item].userId] = 0;
-	}
+          userTask[userObj[item].userId] = 0;
+        }
       }
       for (let item = 0; item < userObj.length; item++) {
         if (userObj[item].completed === true) {
