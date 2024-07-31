@@ -5,13 +5,13 @@ try {
     const endPoint = `${process.argv[2]}`;
     request(endPoint, (err, res, body) => {
       if (err) {
-        console.log('Code: ', err);
+        console.log(0);
       }
       if (res.statusCode === 200) {
         const jsonToObj = JSON.parse(body);
         request(jsonToObj.results[0].characters[15], (err, res, body) => {
           if (err) {
-            console.log('Code: ', err);
+            console.log(0);
           }
           if (res.statusCode === 200) {
             const userObj = JSON.parse(body);
