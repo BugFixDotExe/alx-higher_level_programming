@@ -11,11 +11,11 @@ try {
         const jsonToObj = JSON.parse(body);
         request(jsonToObj.results[0].characters[15], (err, res, body) => {
           if (err) {
-            console.log(0);
+            console.log(err);
           }
           if (res.statusCode === 200) {
             const userObj = JSON.parse(body);
-            console.log(userObj.films.length);
+	    console.log(userObj.films.length);
           }
         });
       }
